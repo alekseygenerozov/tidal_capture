@@ -34,7 +34,7 @@
     	font-size: 55% !important;
 		}
 		.figb figcaption {position: absolute; bottom: -50px; text-align: left; font-size: 70%;}
-		.figl figcaption {position: absolute; right: -17%; text-align: left; font-size: 60%;}
+		.figl figcaption {position: absolute; right: -1%; text-align: left; font-size: 60%;}
     </style> 
 	</head>
 	<body>
@@ -92,7 +92,7 @@
 				<li class=fragment> Dynamical formation </li>
 					<ul>
 						<font color="aqua"><li class=fragment>Binary exchange? But most binaries destroyed </li></font>
-						<font color="aqua"><li class=fragment>Tidal capture! (Fabian+1975, Press&Teukolsky1977, Lee&Ostriker 1986) </li></font>
+						<font color="aqua"><li class=fragment>Tidal capture! (Fabian+1975, Press+Teukolsky1977, Lee+Ostriker 1986) </li></font>
 					</ul>	
 				</ul>
 
@@ -108,14 +108,15 @@
 				</section>
 
 				<section><h2>Models</h2>
-					<p><font color=blue> BH (10 $M_{\odot}$),</font>  <font color=green>NS (1.5 $M_{\odot}$),</font> <font color=orange> WD (0.6 $M_{\odot}$) </font>, and Stars (0.3 $M_{\odot}$)</p>
+					<p><font color=aqua> BH (10 $M_{\odot}$),</font>  <font color=green>NS (1.5 $M_{\odot}$),</font> <font color=orange> WD (0.6 $M_{\odot}$) </font>, and Stars (0.3 $M_{\odot}$)</p>
 					<p>Population 1: 10 Gyr old (NS, WD, Stars)</p>
 					<p>Population 2: Continuous formation of BHs and NS (near present day star forming disks)</p>
+					<p class=fragment> <font color=aqua> Follow two-body relaxation using 1D (energy-space) Fokker-Planck code (PhaseFlow--Vasiliev 2017) </font></p>
 				</section>
 
 				<section><h2>Models</h2>
-					<li>Population 2: Continuous formation of <font color=blue>BHs</font> and <font color=green>NSs</font> </li>
-					<li> <font color=blue> $\dot{N}_{\rm bh}=2 \times 10^{-5}$ </font> 
+					<li>Population 2: Continuous formation of <font color=aqua>BHs</font> and <font color=green>NSs</font> </li>
+					<li> <font color=aqua> $\dot{N}_{\rm bh}=2 \times 10^{-5}$ </font> 
 					<font color=green> $\dot{N}_{\rm ns}=4 \times 10^{-5}$ </font> per year (<i>Optimistic</i>)</li>
 					<li> 10 times lower (<i>Fiducial</i>)</li>
 				</section>
@@ -133,15 +134,18 @@
 				<img src="tc1.png" width="700" align="left">
 				</section>
 
-				<section><h2>Tidal capture physics</h2>
+				<section data-background-size="contain"><h2>Tidal capture physics</h2>
 				<figure class=figl>
-				<img src="tc2.png" width="700" align="left">
+				<img src="tc2.png" width="700" align="left" style="padding:-10px">
 				<figcaption class=fragment> $r_{\rm p, crit}=1.9 r_t, v_\infty=100 \,\mathrm{km\,\, s^{-1}}$ <br>
 				$r_{\rm p, crit}=1.6 r_t, v_\infty=200 \,\mathrm{km\,\, s^{-1}}$</figcaption>
 				</figure>
 				</section>
 
 
+				<section><h2>Survivability</h2>
+				<img src="enRatio.png" width="700" align="left" style="padding:0px">	
+				</section>
 
 				<section><h2>Mode spectrum</h2>
 					<ul>
@@ -185,6 +189,13 @@
 				</figure>
 
 				</section>
+
+				<section><h2>Other works</h2>
+				<li>SMBH Binaries (Generozov&Haiman 2014) </li>
+				<li>Gas around quiescent SMBHs <br>(Generozov, Stone, and Metzger 2015)</li>
+				<li>Jetted tidal disruption events <br> (Generozov, Mimica, et al. 2017)</li>
+				<li>TDE rates (Stone, Generozov, et al. 2017)</li>
+				</section>
 			</div>
 		</div>
 
@@ -196,6 +207,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
 				math: {
 					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full'
