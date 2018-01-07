@@ -24,6 +24,7 @@
 		<style type="text/css">
         p { text-align: left; 
         } 
+        .reveal section img { background:none; border:none; box-shadow:none; }
         li {text-align: left;}
         .reveal h2 {text-align: left;}
         .reveal h1 {text-align: left;}
@@ -34,7 +35,7 @@
     	font-size: 55% !important;
 		}
 		.figb figcaption {position: absolute; bottom: -50px; text-align: left; font-size: 70%;}
-		.figl figcaption {position: absolute; right: -1%; text-align: left; font-size: 60%;}
+		.figl figcaption {position: absolute; right: 17%; top:150px ; text-align: left; font-size: 60%;}
     </style> 
 	</head>
 	<body>
@@ -56,29 +57,33 @@
 					</figure>
 				</section>
 
-				<section><h2>Compact objects in galactic nuclei</h2>
+<!-- 				<section><h2>Compact objects in galactic nuclei</h2>
 					<figure class=figb>
 						<img src="xrb.png" width="400" align="left">
 						<figcaption> Wikimedia commons</figcaption>
 					</figure>
 				</section>
-
+ -->
 				<section><h2>X-ray binaries in the central parsec</h2>
-					<li>
-						Muno+2005, Hailey+2017: 6 transient XRBs in the central pc
-					</li>
-					<li> 
-						3 of these are likely BHs (> 10 year recurrence time)
-					</li>
+					<ul>
+						<li>
+							Muno+2005, Hailey+2017: 6 transient XRBs in the central pc
+						</li>
+						<li> 
+							3 of these are likely BHs (spectra, > 10 year recurrence time)
+						</li>
+					</ul>
 				</section>
 
 				<section><h2>X-ray binaries in the central parsec</h2>
-				<li>
-				Hailey+2017: 8-12 quiescent black hole XRB candidates in the central pc
-				</li>
-				<li> 
-				Likely hundreds below detection threshold
-				</li>
+					<ul>
+						<li>
+							Hailey+2017: 8-12 quiescent black hole XRB candidates in the central pc
+						</li>
+						<li> 
+							Likely hundreds below detection threshold
+						</li>
+					</ul>
 				</section>
 
 				<section><h2>Formation</h2>
@@ -107,46 +112,49 @@
 					<img src="gc.png" width="700" align="left">  
 				</section>
 
-				<section><h2>Models</h2>
+<!-- 				<section><h2>Models</h2>
 					<p><font color=aqua> BH (10 $M_{\odot}$),</font>  <font color=green>NS (1.5 $M_{\odot}$),</font> <font color=orange> WD (0.6 $M_{\odot}$) </font>, and Stars (0.3 $M_{\odot}$)</p>
 					<p>Population 1: 10 Gyr old (NS, WD, Stars)</p>
 					<p>Population 2: Continuous formation of BHs and NS (near present day star forming disks)</p>
-					<p class=fragment> <font color=aqua> Follow two-body relaxation using 1D (energy-space) Fokker-Planck code (PhaseFlow--Vasiliev 2017) </font></p>
+					<p class=fragment> <font color=aqua> Follow two-body relaxation using 1D (energy-space) Fokker-Planck code (PhaseFlow Vasiliev 2017) </font></p>
 				</section>
-
+ -->
 				<section><h2>Models</h2>
-					<li>Population 2: Continuous formation of <font color=aqua>BHs</font> and <font color=green>NSs</font> </li>
+					<ul>
+					<li>Continuous formation of <font color=aqua>BHs</font> and <font color=green>NSs</font> </li>
 					<li> <font color=aqua> $\dot{N}_{\rm bh}=2 \times 10^{-5}$ </font> 
-					<font color=green> $\dot{N}_{\rm ns}=4 \times 10^{-5}$ </font> per year (<i>Optimistic</i>)</li>
-					<li> 10 times lower (<i>Fiducial</i>)</li>
+						<font color=green> $\dot{N}_{\rm ns}=4 \times 10^{-5}$ </font> per year (<i>Optimistic</i>)</li>
+						<li> 10 times lower (<i>Fiducial</i>)</li>
+						<p class=fragment> <font color=aqua> Follow two-body relaxation using 1D (energy-space) Fokker-Planck code (PhaseFlow Vasiliev 2017) </font></p>
+					</ul>
 				</section>
 
 				<section><h2>Stellar distributions</h2>
-					<object align="left"><video src="evol.webm" width="700" muted controls loop class="slideautostart"></video>
+					<object align="left"><video src="evol.webm" width="700" muted controls></video>
 					</object>
 				</section>
 
-				<section><h2>Stellar distributions</h2>
-				  <img src="fiducial_wd.svg" width="700" align="left">
-				</section>
 
 				<section><h2>Tidal capture physics</h2>
-				<img src="tc1.png" width="700" align="left">
+					<img src="tc1.png" width="700" align="left">
 				</section>
 
 				<section data-background-size="contain"><h2>Tidal capture physics</h2>
-				<figure class=figl>
-				<img src="tc2.png" width="700" align="left" style="padding:-10px">
-				<figcaption class=fragment> $r_{\rm p, crit}=1.9 r_t, v_\infty=100 \,\mathrm{km\,\, s^{-1}}$ <br>
-				$r_{\rm p, crit}=1.6 r_t, v_\infty=200 \,\mathrm{km\,\, s^{-1}}$</figcaption>
-				</figure>
+					<figure class=figl>
+						<img src="tc2_clip.png" width="700" align="left" style="padding:-10px">
+						<figcaption class=fragment> <font color=yellow> 
+							$r_{\rm p, crit}=1.9 r_t, v_\infty=100 \,\mathrm{km\,\, s^{-1}}$ <br>
+							$r_{\rm p, crit}=1.6 r_t, v_\infty=200 \,\mathrm{km\,\, s^{-1}}$</figcaption>
+						</font>
+					</figure>
 				</section>
 
 
 				<section><h2>Survivability</h2>
-				<img src="enRatio.png" width="700" align="left" style="padding:0px">	
+				<img src="enRatio.png" width="800" align="left" style="padding:0px">	
 				</section>
-
+				
+<!-- 
 				<section><h2>Mode spectrum</h2>
 					<ul>
 					<li>Calculate spectrum of normal modes</li>
@@ -157,44 +165,46 @@
 				</section>
 
 				<section><h2>Mode velocity</h2>
-				<img src="machCompare_t_simple.svg" width="700" align="left">	
+					<img src="machCompare_t_simple.svg" width="700" align="left">	
 				</section>
-
+ -->
 				<section><h2>Capture rates</h2>
-				<img src="captRateSingle.svg" width="700" align="left">
+					<img src="captRateSingle.svg" width="700" align="left">
 				</section>
 
 				<section><h2>Binary lifetime</h2>
-				<img src="bin_life.png" width="700" align="left">
+					<img src="bin_life.png" width="700" align="left">
 				</section>
 
 				<section><h2>BH XRBs</h2>
-				<img src="num_bins_bh.svg" width="700" align="left">
+					<img src="num_bins_bh.svg" width="700" align="left">
 				</section>
 
 				<section><h2>NS XRBs</h2>
-				<img src="num_bins_ns.svg" width="700" align="left">
+					<img src="num_bins_ns.svg" width="700" align="left">
 				</section>
 
 				<section><h2>Distribution of XRBs</h2>
-				<img src="surfaceDensity.svg" width="700" align="left">
+					<img src="surfaceDensity.svg" width="700" align="left">
 				</section>				
 
 				<section><h2>Summary</h2>
-				<figure class=figb>
-				<img src="table.png" width="700" align="left">
-				<figcaption>BHs have larger cross-section (but shorter lifetime) are more concentrated
-				(mass segregation)
-				</figcaption>
-				</figure>
+					<figure class=figb>
+						<img src="table.png" width="700" align="left">
+						<figcaption>BHs have larger cross-section (but shorter lifetime) are more concentrated
+							(mass segregation)
+						</figcaption>
+					</figure>
 
 				</section>
 
 				<section><h2>Other works</h2>
-				<li>SMBH Binaries (Generozov&Haiman 2014) </li>
-				<li>Gas around quiescent SMBHs <br>(Generozov, Stone, and Metzger 2015)</li>
-				<li>Jetted tidal disruption events <br> (Generozov, Mimica, et al. 2017)</li>
-				<li>TDE rates (Stone, Generozov, et al. 2017)</li>
+					<ul>
+						<li>SMBH Binaries (Generozov+Haiman 2014) </li>
+						<li>Gas around quiescent SMBHs <br>(Generozov, Stone, and Metzger 2015)</li>
+						<li>Jetted tidal disruption events <br> (Generozov, Mimica, et al. 2017)</li>
+						<li>TDE rates (Stone, Generozov, et al. 2017)</li>
+					</ul>
 				</section>
 			</div>
 		</div>
